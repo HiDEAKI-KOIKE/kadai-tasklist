@@ -1,0 +1,9 @@
+<header class="mb-4">
+    <% if logged_in? %>
+    <div class="collapse navbar-collaspe justify-content-end" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+            <li class="nav-item"><%= link_to 'Logout', logout_path, method: :delete %></li>
+            <% end %>
+        </ul>
+    </div>
+</header>
