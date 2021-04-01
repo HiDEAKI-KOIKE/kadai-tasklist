@@ -19,7 +19,7 @@ class TasksController < ApplicationController
         @task = current_user.tasks.build(task_params)
         
         if @task.save
-            flash[:succes] = 'Task　が正常に登録されました'
+            flash[:succes] = 'Taskが正常に登録されました'
             redirect_to @task
         else
             flash.now[:danger] = 'Taskが登録されませんでした'
